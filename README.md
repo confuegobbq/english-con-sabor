@@ -6,6 +6,8 @@ Es un sitio estático (HTML + CSS, sin frameworks ni build), pensado para public
 
 ## Estructura
 
+Todo lo que se publica está en `public/`:
+
 - `index.html`: la landing.
 - `styles.css`: estilos con los colores y tipografías del manual de marca.
 - `img/`: logo (rodaja) y, cuando estén, las fotos.
@@ -15,10 +17,12 @@ Es un sitio estático (HTML + CSS, sin frameworks ni build), pensado para public
 
 ## Publicar en Cloudflare Pages
 
-1. En Cloudflare: Workers & Pages → Create → Pages → Connect to Git.
+1. En Cloudflare: Workers & Pages → Create → Import a repository.
 2. Elegir este repositorio.
-3. Build command: vacío. Build output directory: `/`.
+3. Build command: vacío. Deploy command: `npx wrangler deploy` (lee `wrangler.jsonc`).
 4. Deploy. Cada push a `main` se publica solo.
+
+
 
 ## Pendientes antes de publicar (buscar `TODO` en el código)
 

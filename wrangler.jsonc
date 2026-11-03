@@ -1,0 +1,9 @@
+{
+  // Configuración para publicar el sitio estático en Cloudflare Workers
+  "name": "english-con-sabor",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page"
+  }
+}
