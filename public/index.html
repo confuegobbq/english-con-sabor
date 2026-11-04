@@ -17,8 +17,9 @@
 <meta property="og:title" content="English con Sabor — Clases de inglés que tu hijo quiere tomar">
 <meta property="og:description" content="Clases online 1 a 1 para familias latinas en Estados Unidos. Apoyo escolar, lectura y confianza para hablar.">
 <meta property="og:url" content="https://englishconsabor.com/">
-<!-- TODO: crear og-image.jpg (1200x630) cuando estén las fotos -->
 <meta property="og:image" content="https://englishconsabor.com/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,6 +51,7 @@
       "@id": "https://englishconsabor.com/#astrid",
       "name": "Astrid",
       "jobTitle": "Profesora de inglés",
+      "image": "https://englishconsabor.com/img/astrid-hero.jpg",
       "worksFor": {"@id": "https://englishconsabor.com/#org"},
       "knowsLanguage": ["es", "en"]
     },
@@ -107,9 +109,7 @@
         <path d="M70 420V350M70 420L136.6 398.4M70 420L111.1 476.6M70 420L28.9 476.6M70 420L3.4 398.4" stroke="#FFFCF7" stroke-width="5" stroke-linecap="round"/>
         <rect x="300" y="440" width="150" height="52" rx="26" fill="#7BC043"/>
       </svg>
-      <!-- TODO FOTO: reemplazar este div por
-           <img class="hero-photo" src="/img/astrid-hero.jpg" width="680" height="850" alt="Astrid, profesora de inglés de English con Sabor, dando clase online"> -->
-      <div class="hero-photo placeholder">Foto de Astrid</div>
+      <img class="hero-photo" src="/img/astrid-hero.jpg" width="680" height="850" alt="Astrid, profesora de inglés de English con Sabor" fetchpriority="high">
     </div>
   </div>
 </section>
@@ -213,9 +213,7 @@
 <section id="sobre-mi" class="section">
   <div class="wrap about">
     <div class="about-photo-wrap">
-      <!-- TODO FOTO: reemplazar este div por
-           <img class="about-photo" src="/img/astrid.jpg" width="720" height="720" alt="Astrid, profesora de inglés"> -->
-      <div class="about-photo placeholder">Foto de Astrid</div>
+      <img class="about-photo" src="/img/astrid.jpg" width="560" height="700" alt="Astrid en un mirador de la Patagonia" loading="lazy">
     </div>
     <div class="about-text stack">
       <p class="eyebrow">Sobre mí</p>
@@ -224,19 +222,19 @@
       <p class="muted">Empecé a enseñar casi sin buscarlo: mi hermano daba clases, se llenó de alumnos y me pasó algunos. Desde entonces, cada familia nueva llegó por recomendación de otra. Mis clases son dinámicas, pensadas para el día a día, y con algo que para mí es lo más importante: conocer de verdad a cada alumno.</p>
       <ul class="chips">
         <li>Bilingüe español–inglés</li>
-        <li><!-- TODO --> [Años de experiencia]</li>
+        <li>Estudiante de medicina</li>
         <li>Clases 100% online</li>
       </ul>
     </div>
   </div>
 </section>
 
-<!-- TESTIMONIOS -->
+<!-- TESTIMONIOS: oculto hasta tener los textos reales. Para activarlo, quitar este comentario y cambiar <!~~ ~~> por comentarios normales.
 <section class="section bg-nube">
   <div class="wrap stack-lg">
     <h2 class="h2">Lo que dicen las familias</h2>
     <div class="cards">
-      <!-- TODO TESTIMONIOS: reemplazar con los textos reales (con permiso de cada familia) -->
+      <!~~ TODO TESTIMONIOS: reemplazar con los textos reales (con permiso de cada familia) ~~>
       <figure class="card quote">
         <blockquote>[Testimonio de una mamá]</blockquote>
         <figcaption>[Nombre], mamá de [nombre] · [ciudad], TX</figcaption>
@@ -252,6 +250,8 @@
     </div>
   </div>
 </section>
+
+-->
 
 <!-- FAMILIA -->
 <section class="section section-tight-bottom">
@@ -277,17 +277,17 @@
       <article class="plan plan-featured">
         <p class="badge">El más elegido</p>
         <h3 class="h3-lg">Plan Niños</h3>
-        <p class="price">US$ [PRECIO]<span> / mes</span></p>
-        <p class="muted">[N] clases por semana de [DURACIÓN] min, después de la escuela. Plan a la medida y seguimiento para ti.</p>
+        <p class="price-ask">Consulta el precio por WhatsApp</p>
+        <p class="muted">Clases semanales después de la escuela, con un plan a la medida y seguimiento para ti.</p>
       </article>
       <article class="plan">
         <h3 class="h3-lg">Plan Adultos</h3>
-        <p class="price">US$ [PRECIO]<span> / mes</span></p>
+        <p class="price-ask">Consulta el precio por WhatsApp</p>
         <p class="muted">Conversación, gramática o las dos. Horarios flexibles, también por la mañana.</p>
       </article>
       <article class="plan">
         <h3 class="h3-lg">Plan Familia</h3>
-        <p class="price">[X]% off</p>
+        <p class="price-ask">Descuento especial</p>
         <p class="muted">Tu hijo y tú, cada uno con sus clases y un descuento por inscribirse juntos.</p>
       </article>
     </div>
@@ -309,15 +309,15 @@
       </details>
       <details>
         <summary>¿Desde dónde das las clases?</summary>
-        <p>Doy clases online desde [PAÍS], con alumnos en varios estados, sobre todo en Texas. Todo es por videollamada, así que la distancia no se nota.</p>
+        <p>Doy clases online desde Argentina, con alumnos en varios estados, sobre todo en Texas. Todo es por videollamada, así que la distancia no se nota.</p>
       </details>
       <details>
         <summary>¿Qué necesito?</summary>
-        <p>Una computadora o tablet con cámara y buena conexión. Usamos [Zoom / Google Meet].</p>
+        <p>Una computadora o tablet con cámara y buena conexión. Usamos Zoom o Google Meet, lo que te resulte más cómodo.</p>
       </details>
       <details>
         <summary>¿Cómo se paga?</summary>
-        <p>En dólares, a mes adelantado, por [Zelle / PayPal / tarjeta].</p>
+        <p>En dólares, a mes adelantado. Te paso los medios de pago cuando reservas.</p>
       </details>
     </div>
   </div>
