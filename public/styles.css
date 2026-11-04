@@ -181,3 +181,21 @@ p, h1, h2, h3 { margin: 0; }
 
 /* Precio a consultar */
 .price-ask { font-family: var(--display); font-variation-settings: "SOFT" 100, "opsz" 144; font-size: 21px; font-weight: 700; line-height: 1.25; }
+
+/* Contacto en el footer */
+.footer-links a { color: #F7F3FF; }
+.footer-links a:hover { color: var(--maracuya); }
+
+/* Botón flotante de WhatsApp */
+.wa-float {
+  position: fixed; right: 20px; bottom: 20px; z-index: 50;
+  width: 60px; height: 60px; border-radius: 50%;
+  background: var(--lima); color: var(--tinta);
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 6px 20px rgba(38, 30, 63, 0.25);
+}
+.wa-float:hover { color: var(--tinta); filter: brightness(0.95); }
+.footer-links { overflow-wrap: anywhere; }
+@media (max-width: 720px) {
+  .footer-row { padding-bottom: 96px; }
+}
